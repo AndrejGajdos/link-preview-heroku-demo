@@ -10,7 +10,8 @@ router.get("/", function(req, res, next) {
 router.post("/link", async function(req, res) {
   var url = req.body.url;
   try {
-    const previewData = await linkExtractor(url);
+    const puppeteerArgs = ["--no-sandbox", "--disable-setuid-sandbox"];
+    const previewData = await linkExtractor(url, puppeteerArgs);
     res.end(JSON.stringify(previewData));
   } catch (e) {
     res.status(500).send({ error: JSON.stringify(e.message) });
