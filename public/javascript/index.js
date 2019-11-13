@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   document.querySelector("form").addEventListener("submit", function(e) {
     e.preventDefault();
+    var serverUrl = "https://link-preview-generator.herokuapp.com/link";
     var loadingElement = document.querySelector(".loading-container");
     var initMsgElement = document.querySelector(".init-message");
     var previewDataElement = document.querySelector(".preview-data");
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       errorMsgElement.classList.add("hidden");
     }
     var httpRequest = new XMLHttpRequest();
-    httpRequest.open("POST", "http://localhost:3000/link");
+    httpRequest.open("POST", serverUrl);
     httpRequest.setRequestHeader("Content-Type", "application/json");
     var urlVal = document.querySelector('input[type="url"]').value;
     httpRequest.send(JSON.stringify({ url: urlVal }));
