@@ -1,0 +1,169 @@
+body {
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input {
+  display: flex;
+  flex: 1;
+  margin-right: 20px;
+  height: 48px;
+  box-shadow: none;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  text-indent: 19px;
+  padding: 0;
+  position: relative;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #999999;
+}
+
+input:focus,
+button:focus {
+  box-shadow: 0px 0px 4px 4px rgba(67, 145, 247, 0.2);
+  border: solid 1px #4391f7;
+  background-color: #ffffff;
+  outline: none;
+}
+
+button {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  white-space: nowrap;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  cursor: pointer;
+  border: 1px solid #e5e5e5;
+  padding: 12px 20px;
+}
+
+.preview-container {
+  text-align: center;
+}
+
+.preview-data {
+  border: 1px solid #e5e5e5;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 10px;
+  background-color: #f6f6f6;
+  text-align: left;
+}
+
+.text-container > * + * {
+  margin-top: 10px;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.domain {
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes bouncedelay {
+  0%,
+  100%,
+  80% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.spinner {
+  margin-top: 10px;
+}
+
+.processing-msg {
+  color: #7f7f7f;
+}
+
+.load-circle {
+  width: 18px;
+  height: 18px;
+  background-color: #7f7f7f;
+  border-radius: 100%;
+  display: inline-block;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  animation-fill-mode: both;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.load-circle-1 {
+  animation-delay: -0.32s;
+}
+
+.load-circle-2 {
+  animation-delay: -0.16s;
+}
+
+.error-msg {
+  color: red;
+}

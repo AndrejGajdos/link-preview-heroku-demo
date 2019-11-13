@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Link Preview Generator Demo</title>
+    <script type="text/javascript" src="./javascript/index.js"></script>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Link Preview Generator Demo</h1>
+        <div class="content">
+            <div class="form-container">
+                <form>
+                    <input type="url" name="url" required="required" placeholder="Enter a url" />
+                    <button type="submit">Run</button>
+                </form>
+            </div>
+            <div class="preview-container">
+                <div class="loading-container hidden">
+                    <span class="processing-msg">Processing...</span>
+                    <div class="spinner">
+                        <div class="load-circle load-circle-1"></div>
+                        <div class="load-circle load-circle-2"></div>
+                        <div class="load-circle load-circle-3"></div>
+                    </div>
+                </div>
+                <span class="init-message">Submit a URL to see preview information</span>
+                <div class="preview-data hidden">
+                    <div class="img-container">
+                        <img class="img" />
+                    </div>
+                    <div class="text-container">
+                        <span class="domain"></span>
+                        <span class="header"></span>
+                        <span class="description"></span>
+                    </div>
+                </div>
+                <span class="error-msg"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
