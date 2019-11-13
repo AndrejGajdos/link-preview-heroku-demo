@@ -27,7 +27,7 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 5000, function() {
   console.log("express has started on port 3000");
 });
 
