@@ -1,0 +1,15 @@
+# JetBrains
+/.idea
+
+# Dependency directories
+node_modules/
+
+# Auto generated configs
+/config/tz-data.json
+
+# Build folders
+/dist
+/tmp
+
+#System files
+.DS_Store
