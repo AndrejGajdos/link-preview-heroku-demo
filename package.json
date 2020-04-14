@@ -15,7 +15,7 @@
     "get-urls": "^9.2.0",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "link-preview-generator": "0.0.2",
+    "link-preview-generator": "0.0.4",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
