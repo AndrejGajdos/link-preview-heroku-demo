@@ -6,6 +6,9 @@
     "start": "node app.js",
     "dev": "./node_modules/nodemon/bin/nodemon.js --inspect ./app.js"
   },
+  "engines": {
+    "node": ">=8.16.0"
+  },
   "dependencies": {
     "browserless": "^5.11.9",
     "cookie-parser": "~1.4.4",
