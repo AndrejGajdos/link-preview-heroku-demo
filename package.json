@@ -12,10 +12,10 @@
     "debug": "~2.6.9",
     "ejs": "^2.7.1",
     "express": "~4.16.1",
-    "get-urls": "^9.2.0",
+    "get-urls": "^10.0.0",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "link-preview-generator": "0.0.4",
+    "link-preview-generator": "0.0.5",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
